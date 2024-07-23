@@ -1,0 +1,10 @@
+{
+  "SectionConfigurationWebApi": {
+    "Repository": "oHRNWhqAbAFfV5SIOvROalOgytXoFCyyJ+g5aDegoGWouRIHZoEFNvgiXJzwUSlzieMyrmKGCPPQz7c8sEmrLBRgwZ7QVZO3DjaQ06kiiEuszE6orN90grIRsih+J8gv5rkNPbJzNGEiB42W1qNer6ZeisGLSWV/69kHaJdJ+/59MtxUDr9NqKfMZZqDsuWn",
+    "SecureDomainsVisionWeb": [
+      "https://sistemasentry.com.co",
+      "http://localhost:3000",
+      "http://localhost:3001"
+    ]
+  }
+}

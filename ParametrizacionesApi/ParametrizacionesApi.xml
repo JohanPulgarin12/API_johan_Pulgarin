@@ -1,0 +1,174 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ServiceRecordingApi</name>
+    </assembly>
+    <members>
+        <member name="M:ServiceRecordingApi.Controllers.AttentionRecordingController.ValidateToken(System.String)">
+            <summary>
+            Validate the token.
+            </summary>
+            <param name="filters">Filters to apply.</param>
+            <returns></returns>
+            <response code="200">Succes, validated.</response>
+            <response code="400">Bad Request</response>
+        </member>
+        <member name="M:ServiceRecordingApi.Controllers.AttentionRecordingController.GetUserHeadquarters(System.Int32,System.Int32)">
+            <summary>
+            Retrieve all the headquarters by entering a UserId and CompanyId.
+            </summary>
+            <param name="filters">Filters to apply.</param>
+            <returns></returns>
+            <response code="200">Succes, retrieve the headquarters.</response>
+            <response code="400">Bad Request</response>
+            <response code="204">No content</response>
+            <response code="500">Internal Server Error</response>
+        </member>
+        <member name="M:ServiceRecordingApi.Controllers.AttentionRecordingController.GetCategories(System.Int32)">
+            <summary>
+            Retrieve all the headquarters by entering a categoryId.
+            </summary>
+            <param name="filters">Filters to apply.</param>
+            <returns></returns>
+            <response code="200">Succes, retrieve the headquarters.</response>
+            <response code="400">Bad Request</response>
+            <response code="204">No content</response>
+            <response code="500">Internal Server Error</response>
+        </member>
+        <member name="M:ServiceRecordingApi.Controllers.AttentionRecordingController.GetVideosType(System.Int32)">
+            <summary>
+            Retrieve all the video types by entering a videoTypeId.
+            </summary>
+            <param name="filters">Filters to apply.</param>
+            <returns></returns>
+            <response code="200">Succes, retrieve the video types.</response>
+            <response code="400">Bad Request</response>
+            <response code="204">No content</response>
+            <response code="500">Internal Server Error</response>
+        </member>
+        <member name="M:ServiceRecordingApi.Controllers.AttentionRecordingController.getVideosByFilters(System.String,System.String,System.String,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Retrieve the video information or the video information list.
+            </summary>
+            <param name="filters">Filters to apply.</param>
+            <returns></returns>
+            <response code="200">Succes, retrieve the video information.</response>
+            <response code="400">Bad Request</response>
+            <response code="204">No content</response>
+            <response code="500">Internal Server Error</response>
+        </member>
+        <member name="M:ServiceRecordingApi.Controllers.AttentionRecordingController.getVideosByFiltersVisionFeeling(System.String,System.String,System.String,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Retrieve the video information or the video information list from VisionFeeling.
+            </summary>
+            <param name="filters">Filters to apply.</param>
+            <returns></returns>
+            <response code="200">Succes, retrieve the VisionFeeling video/video list information.</response>
+            <response code="400">Bad Request</response>
+            <response code="204">No content</response>
+            <response code="500">Internal Server Error</response>
+        </member>
+        <member name="M:ServiceRecordingApi.Controllers.AttentionRecordingController.GetServiceSasUriForContainer(System.String)">
+            <summary>
+            Retrieve the token for azure use.
+            </summary>
+            <param name="filters">Filters to apply.</param>
+            <returns></returns>
+            <response code="200">Succes, retrieve the token for azure use.</response>
+            <response code="400">Bad Request</response>
+            <response code="500">Internal Server Error</response>
+        </member>
+        <member name="M:ServiceRecordingApi.Controllers.AttentionRecordingController.GetAuditsList(System.Int32)">
+            <summary>
+            Retrieve the audit from a recording or the audit list from Service Recording.
+            </summary>
+            <param name="filters">Filters to apply.</param>
+            <returns></returns>
+            <response code="200">Succes, retrieve the audit/audit list from the video.</response>
+            <response code="400">Bad Request</response>
+            <response code="204">No content</response>
+            <response code="500">Internal Server Error</response>
+        </member>
+        <member name="M:ServiceRecordingApi.Controllers.AttentionRecordingController.GetAuditsListVisionFeeling(System.Int32)">
+            <summary>
+            Retrieve the audit from a recording or the audit list.
+            </summary>
+            <param name="filters">Filters to apply.</param>
+            <returns></returns>
+            <response code="200">Succes, retrieve the audit/audit list from the VisionFeeling recording.</response>
+            <response code="400">Bad Request</response>
+            <response code="204">No content</response>
+            <response code="500">Internal Server Error</response>
+        </member>
+        <member name="M:ServiceRecordingApi.Controllers.AttentionRecordingController.PostAudit(System.String,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Save an audit for the service recording video.
+            </summary>
+            <param name="filters">Filters to apply.</param>
+            <returns></returns>
+            <response code="200">Succes, Save an audit for the service recording recording.</response>
+            <response code="400">Bad Request</response>
+            <response code="500">Internal Server Error</response>
+        </member>
+        <member name="M:ServiceRecordingApi.Controllers.AttentionRecordingController.PostAuditVisionFeeling(System.String,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Save an audit for the Vision feeling recording.
+            </summary>
+            <param name="filters">Filters to apply.</param>
+            <returns></returns>
+            <response code="200">Succes, Save an audit for the Vision feeling recording.</response>
+            <response code="400">Bad Request</response>
+            <response code="500">Internal Server Error</response>
+        </member>
+        <member name="M:ServiceRecordingApi.Controllers.AttentionRecordingController.deleteRecording(System.Int32,System.String,System.String)">
+            <summary>
+            Delete a recording from the service recording.
+            </summary>
+            <param name="filters">Filters to apply.</param>
+            <returns></returns>
+            <response code="200">Succes, delete a recording from Service Recording.</response>
+            <response code="400">Bad Request</response>
+            <response code="500">Internal Server Error</response>
+        </member>
+        <member name="M:ServiceRecordingApi.Controllers.AttentionRecordingController.deleteRecordingVisionFeeling(System.Int32,System.String,System.String)">
+            <summary>
+            Delete a recording from the Vision Feeling service Recording.
+            </summary>
+            <param name="filters">Filters to apply.</param>
+            <returns></returns>
+            <response code="200">Succes, delete a recording from the Vision Feeling Service Recording.</response>
+            <response code="400">Bad Request</response>
+            <response code="500">Internal Server Error</response>
+        </member>
+        <member name="M:ServiceRecordingApi.Controllers.AttentionRecordingController.getConfiguration">
+            <summary>
+            Retrieve the configuration from service Recording.
+            </summary>
+            <param name="filters">Filters to apply.</param>
+            <returns></returns>
+            <response code="200">Succes, retrieve the configuration from the Service Recording.</response>
+            <response code="204">No Content</response>
+            <response code="500">Internal Server Error</response>
+        </member>
+        <member name="M:ServiceRecordingApi.Controllers.AttentionRecordingController.getModuleToken(System.Int32,System.Int32)">
+            <summary>
+            Retrieve the module token by company and user.
+            </summary>
+            <param name="filters">Filters to apply.</param>
+            <returns></returns>
+            <response code="200">Succes, retrieve the module token by company and user.</response>
+            <response code="400">Bad Request</response>
+            <response code="500">Internal Server Error</response>
+        </member>
+        <member name="M:ServiceRecordingApi.Controllers.TokenController.Authentication(System.String,System.String)">
+            <summary>
+            Token authentication by credentials.
+            </summary>
+            <param name="filters">Filters to apply.</param>
+            <returns></returns>
+            <response code="200">Succes, retrieve the token.</response>
+            <response code="404">No Content</response>
+            <response code="500">Internal Server Error</response>
+        </member>
+    </members>
+</doc>
